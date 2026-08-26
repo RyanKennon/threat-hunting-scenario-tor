@@ -1,4 +1,6 @@
-<img src="Images/Header.png" img width="400" alt="image"/>
+<p align="center">
+  <img src="Images/Header.png" img width="400" alt="image"/>
+</p>
 
 # Threat Hunt Report: Unauthorized TOR Usage
 - [Scenario Creation](https://github.com/RyanKennon/threat-hunting-scenario-tor/blob/main/threat-hunting-scenario-tor-event-creation.md)
