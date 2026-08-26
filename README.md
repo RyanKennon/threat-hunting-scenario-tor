@@ -1,4 +1,4 @@
-<img width="400" src="https://github.com/user-attachments/assets/44bac428-01bb-4fe9-9d85-96cba7698bee" alt="Tor Logo with the onion and a crosshair on it"/>
+<img src="Assets/Header.png" img width="400" alt="image"/>
 
 # Threat Hunt Report: Unauthorized TOR Usage
 - [Scenario Creation](https://github.com/RyanKennon/threat-hunting-scenario-tor/blob/main/threat-hunting-scenario-tor-event-creation.md)
@@ -38,7 +38,8 @@ DeviceFileEvents
 | order by Timestamp desc
 | project Timestamp, DeviceName, ActionType, FileName, FolderPath, SHA256, Account = InitiatingProcessAccountName
 ```
-<img width="1181" height="528" alt="Capture1" src="https://github.com/user-attachments/assets/8cdb97ae-83dc-4037-9956-de2c3b7c4731" />
+
+<img src="Assets/Image%201.png" img width="1181" height="528" alt="image" />
 
 ---
 
@@ -54,7 +55,8 @@ DeviceProcessEvents
 | where ProcessCommandLine contains "tor-browser-windows-x86_64-portable-15.0.7.exe"
 | project Timestamp, DeviceName, AccountName, ActionType, FileName, FolderPath, SHA256, ProcessCommandLine
 ```
-<img width="1440" height="175" alt="Capture2" src="https://github.com/user-attachments/assets/a9414da6-477f-4cc8-8f74-d137bced6dc1" />
+
+<img src="Assets/Image%202.png" img width="1440" height="175" alt="image" />
 
 ---
 
@@ -71,7 +73,7 @@ DeviceProcessEvents
 | project Timestamp, DeviceName, AccountName, ActionType, FileName, FolderPath, SHA256, ProcessCommandLine
 | order by Timestamp desc
 ```
-<img width="1439" height="487" alt="Capture3" src="https://github.com/user-attachments/assets/10721e6f-57dd-45a1-a392-16fb6382234f" />
+<img src="Assets/Image%203.png" img width="1439" height="487" alt="image" />
 
 ---
 
@@ -90,7 +92,7 @@ DeviceNetworkEvents
 | project Timestamp, DeviceName, InitiatingProcessAccountName, ActionType, RemoteIP, RemotePort, RemoteUrl, InitiatingProcessFileName, InitiatingProcessFolderPath
 | order by Timestamp desc
 ```
-<img width="1597" height="333" alt="Capture4" src="https://github.com/user-attachments/assets/928a0663-45b8-48c4-aa6f-f109a5566591" />
+<img src="Assets/Image%204.png" img width="1597" height="333" alt="image" />
 
 ---
 
