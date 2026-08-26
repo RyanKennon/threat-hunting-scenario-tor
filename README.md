@@ -1,4 +1,4 @@
-<img src="Assets/Header.png" img width="400" alt="image"/>
+<img src="Images/Header.png" img width="400" alt="image"/>
 
 # Threat Hunt Report: Unauthorized TOR Usage
 - [Scenario Creation](https://github.com/RyanKennon/threat-hunting-scenario-tor/blob/main/threat-hunting-scenario-tor-event-creation.md)
@@ -39,7 +39,7 @@ DeviceFileEvents
 | project Timestamp, DeviceName, ActionType, FileName, FolderPath, SHA256, Account = InitiatingProcessAccountName
 ```
 
-<img src="Assets/Image%201.png" img width="1181" height="528" alt="image" />
+<img src="Images/Image%201.png" img width="1181" height="528" alt="image" />
 
 ---
 
@@ -56,7 +56,7 @@ DeviceProcessEvents
 | project Timestamp, DeviceName, AccountName, ActionType, FileName, FolderPath, SHA256, ProcessCommandLine
 ```
 
-<img src="Assets/Image%202.png" img width="1440" height="175" alt="image" />
+<img src="Images/Image%202.png" img width="1440" height="175" alt="image" />
 
 ---
 
@@ -73,7 +73,7 @@ DeviceProcessEvents
 | project Timestamp, DeviceName, AccountName, ActionType, FileName, FolderPath, SHA256, ProcessCommandLine
 | order by Timestamp desc
 ```
-<img src="Assets/Image%203.png" img width="1439" height="487" alt="image" />
+<img src="Images/Image%203.png" img width="1439" height="487" alt="image" />
 
 ---
 
@@ -92,7 +92,7 @@ DeviceNetworkEvents
 | project Timestamp, DeviceName, InitiatingProcessAccountName, ActionType, RemoteIP, RemotePort, RemoteUrl, InitiatingProcessFileName, InitiatingProcessFolderPath
 | order by Timestamp desc
 ```
-<img src="Assets/Image%204.png" img width="1597" height="333" alt="image" />
+<img src="Images/Image%204.png" img width="1597" height="333" alt="image" />
 
 ---
 
